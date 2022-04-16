@@ -1,0 +1,214 @@
+/*
+* Media Queries
+----------------------------------*/
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  
+    .container {
+        max-width: 960px;
+    }
+
+    .card-mini-body h3 {
+        font-size: 14px;
+    }
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .container {
+    max-width: 760px;
+    } 
+    #login,
+    #user-login span  {
+        display: none;
+    }
+
+    .card {
+        width: 33.3%;
+    }
+
+    .card:hover {
+        box-shadow: none;
+    }
+
+    .card-mini {
+        width: 25%;
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .container {
+        max-width: 560px;
+    }
+
+    .d-flex {
+        height: 52px;
+    }
+
+    .header-personal {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .mobile-header {
+        display: inline-flex;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 10;
+
+        width: 300px;
+        height: 100%;
+        background-color: $color-secondary;
+        
+        border-radius: 12px 0 0 12px;
+    }
+    
+    .navigation .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation .nav-menu li {
+        width: 100%;
+        padding: 10px 0;
+    
+        & a:hover {
+            border-bottom: none;
+        }
+    }
+
+    .post-header {
+        height: 116px;
+    }
+
+    #search-recipe {
+        width: 440px;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card-mini {
+        width: 33.33%;
+        padding: 10px;
+    }   
+    
+    .pre-footer h1,
+    .pre-footer form {
+        width: 100%;
+    }
+
+    .pre-footer .d-flex {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pre-footer h1 {
+        font-size: 22px;
+        padding-right: 0;
+    }
+
+    .global-footer .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .footer-col {
+        display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .footer-col .logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .footer-col .footer-icon {
+        order:2;
+        margin: auto;
+    }
+
+    .footer-col .footer-nav {
+        order: 1;
+        margin:15px 0;
+    }
+
+    .footer-coll p,
+    .footer-nav a {
+        font-size: 12px;
+    }
+
+
+
+ }
+
+
+
+// Smallest device
+@media (max-width: 575.98px) { 
+    .container {
+        max-width: 360px;
+    }
+
+    #search-recipe {
+        width: 270px;
+    }
+
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 6px;
+    }
+
+    .card-img {
+        width: 33.3333%;
+        margin-right: 10px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 67.3333%;
+    }
+
+    .card-body h3 {
+        height: auto;
+    }
+
+    .recipe-author {
+        margin-bottom: auto;
+    }
+
+    .card-mini {
+        padding: 7px;
+    }
+ }
+
+  

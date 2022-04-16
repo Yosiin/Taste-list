@@ -1,0 +1,70 @@
+/*
+* Buttons and links
+-----------------------------------------*/
+
+%btn {
+    font-family: $ff-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    text-align: center;
+
+    display: inline-block;
+
+    color: $bg-color;
+    border-radius: 4px;
+    padding: 0 26px 0 26px;
+    border: none;
+    transition: 0.3s all ease-in-out;
+}
+
+// Pink btn
+.btn-primary {
+    @extend %btn;
+    background: $color-primary;
+    max-width: 330px;
+
+    &:hover {
+        background: darken($color-primary, 5%);
+    }
+}
+// Purple btn 
+.btn-secondary {
+    @extend %btn;
+    background: $color-secondary;
+    width: 330px;
+    max-width: 330px;
+
+    &:hover {
+        background: darken($color-secondary, 5%);
+    }
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.btn-rounded {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-secondary;
+
+    white-space: nowrap;
+
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 24px;
+    border: 1px solid $color-secondary;
+
+    &:hover {
+        color: $bg-color;
+        background-color: $color-secondary;
+    } 
+}
+

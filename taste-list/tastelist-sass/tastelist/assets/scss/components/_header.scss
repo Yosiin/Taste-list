@@ -1,0 +1,131 @@
+/*
+*HEADER
+-------------------------------------------*/
+.site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: $bg-color;
+    z-index: 2;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 10%);
+}
+
+.d-flex {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+// Logo
+.logo {
+    margin-right: 46px;
+}
+
+.logo img {
+    max-width: 130px;
+    height: auto;
+}
+
+// Navigation
+.nav-menu {
+    display: flex
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a:hover {
+    border-bottom: 1px solid $color-content;
+}
+
+
+// Personal/ right menu
+.header-personal {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.mobile-header i,
+.header-personal i {
+    font-size: 20px;
+    color: $color-secondary;
+}
+
+.header-personal span {
+    line-height: 19px;
+    color: $color-secondary;
+}
+
+#search {
+    margin-right: 28px;
+}
+
+#user-login {
+    display: inline-flex;
+    align-items: center;
+}
+
+#user-login i {
+    margin-right: 12px;
+}
+
+#login {
+    margin-left: 28px;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.mobile-header {
+    margin-left: auto;
+}
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    position: relative;
+    top: 1px;
+    right: 0px;
+    z-index: 11;
+
+    max-width: 30px;
+    height: 25px;
+    cursor: pointer;
+
+    margin-left: 20px;
+}
+
+.bar {
+    background-color: $color-secondary;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.change .bar1 {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(-45deg) translate(3px, -6px);
+}
